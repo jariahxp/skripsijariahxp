@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="196dp"
+    android:gravity="top"
+    android:padding="16dp"
+    android:background="@drawable/side"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo123"/>
+
+    <TextView
+        android:id="@+id/nameNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TaPredict By JariahXp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/emailNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="ghozaligholi86@gmail.com"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.fragment.AboutUsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutDeveloper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/bgabout"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/textViewDevelopper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tentang Developer"
+                android:textColor="@color/purple_500"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewDeveloper"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/garisDeveloper"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+
+                app:layout_constraintEnd_toEndOf="@+id/viewDeveloper"
+                app:layout_constraintStart_toStartOf="@+id/textViewDevelopper"
+                app:layout_constraintTop_toBottomOf="@+id/viewDeveloper"
+                android:background="@color/gray"
+                android:layout_height="2dp">
+
+
+            </View>
+            <LinearLayout
+                android:id="@+id/viewDeveloper1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/garisDeveloper"
+                app:layout_constraintEnd_toEndOf="@+id/garisDeveloper"
+                app:layout_constraintStart_toStartOf="@+id/garisDeveloper">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardDeveloper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    android:visibility="invisible"
+                    android:layout_margin="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/garisDeveloper"
+                    app:layout_constraintEnd_toEndOf="@+id/garisDeveloper"
+                    app:layout_constraintStart_toStartOf="@+id/garisDeveloper"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/developerImage"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/fotoku"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Foto Developer" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/developerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    android:text="@string/tentang_developer"
+                    android:justificationMode="inter_word"
+                    android:textColor="@color/black"
+                    android:ellipsize="none"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/garisDeveloper"
+                    app:layout_constraintStart_toStartOf="@+id/garisDeveloper"
+                    app:layout_constraintTop_toBottomOf="@+id/cardDeveloper" />
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/viewDeveloper"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:src="@drawable/baseline_arrow_drop_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutLatarBelakang"
+
+            android:orientation="vertical"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bgabout"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textLatarBelakang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latar Belakang Aplikasi"
+                android:textSize="14sp"
+
+                android:textColor="@color/purple_500"
+                android:fontFamily="@font/poppins_bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewLatarBelakang"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:id="@+id/garisLatarBelakang"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/viewLatarBelakang"
+                android:visibility="gone"
+
+                app:layout_constraintStart_toStartOf="@+id/textLatarBelakang"
+                app:layout_constraintTop_toBottomOf="@+id/viewLatarBelakang"
+                android:background="@color/gray"
+                android:layout_height="2dp">
+
+
+            </View>
+
+            <TextView
+                android:id="@+id/latarbelakangView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:text="dfdfdv"
+                android:visibility="gone"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/garisLatarBelakang"
+                app:layout_constraintStart_toStartOf="@+id/garisLatarBelakang"
+                app:layout_constraintTop_toBottomOf="@+id/garisLatarBelakang" />
+            <ImageView
+                android:id="@+id/viewLatarBelakang"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_arrow_drop_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layoutDeskripsi"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bgabout"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewDeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi Aplikasi"
+                android:textSize="14sp"
+
+                android:textColor="@color/purple_500"
+                android:fontFamily="@font/poppins_bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewDeskripsi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:id="@+id/garisDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+
+                app:layout_constraintEnd_toEndOf="@+id/viewDeskripsi"
+                app:layout_constraintStart_toStartOf="@+id/textViewDeskripsi"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDeskripsi"
+                android:background="@color/gray"
+                android:layout_height="2dp">
+
+
+            </View>
+
+            <TextView
+                android:id="@+id/deskripsiView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="2dp"
+                android:text="dfdfdv"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/garisDeskripsi"
+                app:layout_constraintStart_toStartOf="@+id/garisDeskripsi"
+                app:layout_constraintTop_toBottomOf="@+id/garisDeskripsi" />
+            <ImageView
+                android:id="@+id/viewDeskripsi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_arrow_drop_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layoutFitur"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bgabout"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewFitur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur dan Keunggulan"
+                android:textColor="@color/purple_500"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14sp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/viewFitur"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:id="@+id/garisFitur"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewFitur"
+                app:layout_constraintStart_toStartOf="@+id/textViewFitur"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFitur"
+                android:background="@color/gray"
+                android:layout_height="2dp">
+
+
+            </View>
+
+            <TextView
+                android:id="@+id/fiturView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:text="dfdfdv"
+                android:visibility="gone"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/garisFitur"
+                app:layout_constraintStart_toStartOf="@+id/garisFitur"
+                app:layout_constraintTop_toBottomOf="@+id/garisFitur" />
+            <ImageView
+                android:id="@+id/viewFitur"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_arrow_drop_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutKontak"
+            android:orientation="vertical"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bgabout"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewKontak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kontak Kami"
+                android:textColor="@color/purple_500"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14sp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/viewKontak"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <View
+                android:id="@+id/garisKontak"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+
+                app:layout_constraintEnd_toEndOf="@+id/textViewKontak"
+                app:layout_constraintStart_toStartOf="@+id/textViewKontak"
+                app:layout_constraintTop_toBottomOf="@+id/textViewKontak"
+                android:background="@color/gray"
+                android:layout_height="2dp">
+
+
+            </View>
+
+            <TextView
+                android:id="@+id/kontakView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:text="dfdfdv"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/garisKontak"
+                app:layout_constraintStart_toStartOf="@+id/garisKontak"
+                app:layout_constraintTop_toBottomOf="@+id/garisKontak" />
+            <ImageView
+                android:id="@+id/viewKontak"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_arrow_drop_down_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="26dp"
+    app:cardCornerRadius="16dp"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+
+        android:layout_height="wrap_content">
+
+        <!-- ID Box -->
+        <TextView
+            android:id="@+id/tvIdBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Box: 001"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Suhu -->
+        <TextView
+            android:id="@+id/tvSuhu"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Suhu"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvIdBox"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSuhuEqual"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:fontFamily="@font/poppins_bold"
+
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/tvSuhu"
+            app:layout_constraintTop_toBottomOf="@id/tvIdBox"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSuhuValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="vv"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/tvSuhuEqual"
+            app:layout_constraintTop_toBottomOf="@id/tvIdBox"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Kelembapan -->
+        <TextView
+            android:id="@+id/tvKelembapan"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Kelembapan"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSuhu"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvKelembapanEqual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/tvKelembapan"
+            app:layout_constraintTop_toBottomOf="@id/tvSuhu"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvKelembapanValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:text="vv"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/tvKelembapanEqual"
+            app:layout_constraintTop_toBottomOf="@id/tvSuhu"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Presentase Pengurangan Berat -->
+        <TextView
+            android:id="@+id/tvKadarAlkohol"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+
+            android:text="Kadar Etanol"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvKelembapan"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvKadarAlkoholEqual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/tvKelembapan"
+            app:layout_constraintTop_toBottomOf="@id/tvKelembapan"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvKadarAlkoholValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vv"
+            android:fontFamily="@font/poppins_bold"
+
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/tvKelembapanEqual"
+            app:layout_constraintTop_toBottomOf="@id/tvKelembapan"
+            android:layout_marginBottom="8dp"/>
+
+
+
+        <!-- Hasil Prediksi -->
+        <TextView
+            android:id="@+id/tvHasilPrediksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Hasil Prediksi: Sukses"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvKadarAlkohol" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

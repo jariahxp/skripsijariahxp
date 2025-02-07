@@ -1,0 +1,10 @@
+<!-- item_id.xml -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textViewId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:fontFamily="@font/poppins_regular"
+    android:layout_marginStart="10dp"
+    android:textColor="@android:color/black"
+    android:padding="16dp"/>

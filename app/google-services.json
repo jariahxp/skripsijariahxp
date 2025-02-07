@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "792969401455",
+    "firebase_url": "https://skripsijariahxp-default-rtdb.firebaseio.com",
+    "project_id": "skripsijariahxp",
+    "storage_bucket": "skripsijariahxp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792969401455:android:602de49c737aa3566a299a",
+        "android_client_info": {
+          "package_name": "com.jariahxp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792969401455-5i621ml4p531su37himjep993n2u741f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jariahxp",
+            "certificate_hash": "f26646ec6f9107530d7d877181046ca5b4e197df"
+          }
+        },
+        {
+          "client_id": "792969401455-hu1j160r59sqhja6gr5rm3e151p5e2l8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6SQT9efvHqDkVW_NoAl0cDeqvQOgFofY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792969401455-hu1j160r59sqhja6gr5rm3e151p5e2l8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

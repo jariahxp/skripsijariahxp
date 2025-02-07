@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:scrollbars="none"
+    tools:context=".ui.auth.signup.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="start"
+            android:contentDescription="back" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Hai, Selamat Datang"
+            android:textSize="24sp"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/poppins_regular" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Daftar untuk membuat akun baru dengan mudah dan cepat menggunakan aplikasi TaPredict"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/poppins_regular" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationLoading"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="2dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/register"
+            app:lottie_loop="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_gravity="start"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/poppins_regular" />
+
+        <!-- Username Input -->
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:background="@drawable/input_bacground"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:contentDescription="email"
+                android:src="@drawable/ic_user" />
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp"
+                android:hint="Masukkan Email disini"
+                android:inputType="textEmailAddress"
+                android:theme="@style/Base.ThemeOverlay.Material3.TextInputEditText."
+
+                android:textColor="@android:color/black"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Password"
+            android:layout_gravity="start"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/poppins_regular" />
+
+        <!-- Password Input -->
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/input_bacground"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/password"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:contentDescription="password" />
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:hint="Masukkan password disini"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:theme="@style/Base.ThemeOverlay.Material3.TextInputEditText."
+                android:textColor="@android:color/black"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Username"
+            android:layout_gravity="start"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/poppins_regular" />
+
+        <!-- Password Input -->
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/input_bacground"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:contentDescription="username"
+                android:src="@drawable/ic_user" />
+            <EditText
+                android:id="@+id/username_input"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:hint="Masukkan username disini"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:theme="@style/Base.ThemeOverlay.Material3.TextInputEditText."
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/input_bacground"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            android:fontFamily="@font/poppins_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sudah memiliki akun?"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tvToLogin"
+                android:paddingVertical="5dp"
+                android:layout_width="wrap_content"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:text="login disini"/>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <!-- OR Text -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/or_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="atau"
+                android:textSize="12sp"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/input_bacground_or"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="8dp"/>
+
+        </RelativeLayout>
+
+
+
+            <!-- Sign in with Google -->
+            <Button
+                android:id="@+id/google_sign_up_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register dengan  Google"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_google"
+                android:textSize="12sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingVertical="5dp"
+                android:textStyle="bold"
+                android:background="@drawable/input_bacground"
+                android:fontFamily="@font/poppins_bold" />
+
+    </LinearLayout>
+</ScrollView>

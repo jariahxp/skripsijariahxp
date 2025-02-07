@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Sayangnya fitur ini hanya tersedia kalau anda terhubung internet"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/purple_500" />
+        <!-- Animasi Lottie -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            app:lottie_rawRes="@raw/no_internet"
+            android:layout_gravity="center" />
+
+
+
+        <!-- Deskripsi -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Coba hubungkan perangkat ke koneksi internet"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/purple_500"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Tombol Tutup -->
+        <ImageView
+            android:id="@+id/cancelButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_close_24" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
